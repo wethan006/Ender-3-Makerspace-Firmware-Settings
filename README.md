@@ -1,4 +1,4 @@
-# ender3firmwarechanges
+# ender 3 firmware changes
 This is an update of all the changes I have made to my Ender 3's within the makerspace. Not all of these changes are probably useful for a solo printer. First some back ground.
 I work with 20 Ender 3's that are being used by all kinds of students with various levels of experience with them, some have honestly no idea what they are doing.
 To stream line things, some big changes have been made such as not writing the EEPROM to the SD card this is because all of my cards keep changing printers so when printer 1 tried to use printer 2's EEPROM it would fail.
