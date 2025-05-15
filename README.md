@@ -158,15 +158,15 @@ LSTR WELCOME_MSG = MACHINE_NAME _UxGT(" Online");
 - These are all changes that affect the probe while leveling to increase the speed, while keeping accuracy. I also increased how fast the printer will home.
 
 ```cpp
-#define Z_PROBE_FEEDRATE_FAST (4*60) CHANGED TO: (10*60)
+#define Z_PROBE_FEEDRATE_FAST (10*60)
 
-DEFAULT_MAX_FEEDRATE : {500, 500, 5, 25} CHANGED TO: {500, 500, 10, 25}
+DEFAULT_MAX_FEEDRATE : {500, 500, 10, 25}
 
-Z_CLEARANCE_BETWEEN_PROBES : 5 CHANGED TO: 2
+Z_CLEARANCE_BETWEEN_PROBES : 2
 
-#define BLTOUCH_DELAY 500 CHANGED TO: 1000
+#define BLTOUCH_DELAY 1000
 
-#define HOMING_FEEDRATE_MM_M CHANGED TO: { (100*60), (100*60), (10*60) } : Changed from the default values I forgot what the defaults were
+#define HOMING_FEEDRATE_MM_M CHANGED TO: { (100*60), (100*60), (10*60) }
 ```
 
 ### `Configuration_adv.h`
@@ -220,7 +220,7 @@ EDIT_ITEM_FAST(float3, MSG_Z_FADE_HEIGHT, &editable.decimal, 0, 100, []{ set_z_f
 ```cpp
 #define PID_EDIT_MENU
 
-#define PID_AUTOTUME_MENU
+#define PID_AUTOTUNE_MENU
 ```
 
 **ENABLE:**
