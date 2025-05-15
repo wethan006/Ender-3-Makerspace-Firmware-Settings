@@ -200,7 +200,7 @@ DISABLE:
 ```cpp
 #define PID_EDIT_MENU
 
-#define PID_AUTOTUME_MENU
+#define PID_AUTOTUNE_MENU
 ```
 ENABLE:
 ```cpp
